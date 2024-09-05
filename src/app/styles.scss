@@ -1,0 +1,24 @@
+.main-layout {
+    width: 100dvw;
+    height: 100dvh;
+    display: grid;
+    grid-template-areas:
+        'h h h h'
+        'a m m m'
+        'a m m m'
+    ;
+    padding: 24px;
+    gap: 24px;
+    background-color: $color-neutral-100;
+
+    main {
+        grid-area: m;
+        /* height: calc(100dvh - 64px); */
+    }
+
+    aside {
+        /* width: 20dvw;
+        height: calc(100dvh - 64px); */
+        grid-area: a;
+    }
+}

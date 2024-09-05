@@ -1,0 +1,33 @@
+.categories-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .categories-list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 4px;
+        user-select: none;
+
+        .category-list-item {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            border-radius: 8px;
+
+            &:hover {
+                background-color: $color-neutral-200;
+                cursor: pointer;
+            }
+
+            &.active {
+                background-color: $color-neutral-200;
+
+                &:hover {
+                    background-color: $color-neutral-300;
+                }
+            }
+        }
+    }
+}
